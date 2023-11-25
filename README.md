@@ -9,4 +9,4 @@
 Projeto do 6° semestre de engenharia da computação com o intuito de aplicar os conhecimentos aprendidos em aula.
 
 ## Status do Projeto
-:construction: Em Desenvolvimento :construction:
+:construction: Concluído :construction:
