@@ -34,6 +34,7 @@ Projeto referente a disciplina de Programação de Hardware, 6° Semestre, Engen
 | TIP41C          |     x1     |
 | Módulo JoyStick |     x1     |
 
+
 ![esquemático GigantedeMDF](https://github.com/Mateus-M-Soeiro/GigantesDeMDF/assets/102930854/2c235fe8-c88a-49da-8002-85a87a04828d)
 
 
