@@ -1,0 +1,916 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GigantesDeMDF: Referência do Arquivo codigo6.ino</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GigantesDeMDF<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definições e Macros</a> &#124;
+<a href="#func-members">Funções</a> &#124;
+<a href="#var-members">Variáveis</a>  </div>
+  <div class="headertitle"><div class="title">Referência do Arquivo codigo6.ino</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;avr/io.h&gt;</code><br />
+<code>#include &lt;avr/interrupt.h&gt;</code><br />
+</div>
+<p><a href="codigo6_8ino_source.html">Ir para o código-fonte desse arquivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Definições e Macros</h2></td></tr>
+<tr class="memitem:a43bafb28b29491ec7f871319b5a3b2f8" id="r_a43bafb28b29491ec7f871319b5a3b2f8"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codigo6_8ino.html#a43bafb28b29491ec7f871319b5a3b2f8">F_CPU</a>&#160;&#160;&#160;16000000UL</td></tr>
+<tr class="memdesc:a43bafb28b29491ec7f871319b5a3b2f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define frequência de operação.  <br /></td></tr>
+<tr class="separator:a43bafb28b29491ec7f871319b5a3b2f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11643f271076024c395a93800b3d9546" id="r_a11643f271076024c395a93800b3d9546"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codigo6_8ino.html#a11643f271076024c395a93800b3d9546">_BV</a>(<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">bit</a>)&#160;&#160;&#160;(1 &lt;&lt; (<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">bit</a>))</td></tr>
+<tr class="memdesc:a11643f271076024c395a93800b3d9546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro bit value.  <br /></td></tr>
+<tr class="separator:a11643f271076024c395a93800b3d9546"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bdc25d2e1718c2190ce286a5a82f4da" id="r_a7bdc25d2e1718c2190ce286a5a82f4da"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codigo6_8ino.html#a7bdc25d2e1718c2190ce286a5a82f4da">SET_BIT</a>(<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">PORT</a>,  <a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">BIT</a>)&#160;&#160;&#160;<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">PORT</a> |= (1&lt;&lt;<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">BIT</a>)</td></tr>
+<tr class="memdesc:a7bdc25d2e1718c2190ce286a5a82f4da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define como 1 o bit na respectiva porta <br  />
+  <br /></td></tr>
+<tr class="separator:a7bdc25d2e1718c2190ce286a5a82f4da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeb640750b23feafe7747a2da47507a0" id="r_afeb640750b23feafe7747a2da47507a0"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codigo6_8ino.html#afeb640750b23feafe7747a2da47507a0">CLEAR_BIT</a>(<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">PORT</a>,  <a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">BIT</a>)&#160;&#160;&#160;<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">PORT</a> &amp;= ~(1&lt;&lt;<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">BIT</a>)</td></tr>
+<tr class="memdesc:afeb640750b23feafe7747a2da47507a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">limpa o bit na respectiva porta  <br /></td></tr>
+<tr class="separator:afeb640750b23feafe7747a2da47507a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ae05c52c97fb8f1759905c87e3003a5" id="r_a7ae05c52c97fb8f1759905c87e3003a5"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codigo6_8ino.html#a7ae05c52c97fb8f1759905c87e3003a5">FLIP_BIT</a>(<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">PORT</a>,  <a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">BIT</a>)&#160;&#160;&#160;<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">PORT</a> ^= (1&lt;&lt;<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">BIT</a>)</td></tr>
+<tr class="memdesc:a7ae05c52c97fb8f1759905c87e3003a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alterna o valor do bit na respectiva porta.  <br /></td></tr>
+<tr class="separator:a7ae05c52c97fb8f1759905c87e3003a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2515c572128cd2566a8b93993fd9b7d5" id="r_a2515c572128cd2566a8b93993fd9b7d5"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codigo6_8ino.html#a2515c572128cd2566a8b93993fd9b7d5">frente_motorR</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:a2515c572128cd2566a8b93993fd9b7d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">porta de saida para motor da direita  <br /></td></tr>
+<tr class="separator:a2515c572128cd2566a8b93993fd9b7d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b850e11bc963a2bb44a03561fdcf94b" id="r_a9b850e11bc963a2bb44a03561fdcf94b"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codigo6_8ino.html#a9b850e11bc963a2bb44a03561fdcf94b">tras_motorR</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memdesc:a9b850e11bc963a2bb44a03561fdcf94b"><td class="mdescLeft">&#160;</td><td class="mdescRight">porta de saida para motor da direita  <br /></td></tr>
+<tr class="separator:a9b850e11bc963a2bb44a03561fdcf94b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a60c3df33306787e180359317de9701" id="r_a0a60c3df33306787e180359317de9701"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codigo6_8ino.html#a0a60c3df33306787e180359317de9701">frente_motorL</a>&#160;&#160;&#160;3</td></tr>
+<tr class="memdesc:a0a60c3df33306787e180359317de9701"><td class="mdescLeft">&#160;</td><td class="mdescRight">porta de saida para motor da esquerda  <br /></td></tr>
+<tr class="separator:a0a60c3df33306787e180359317de9701"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa70fb7a53861597468cd3ba50163076a" id="r_aa70fb7a53861597468cd3ba50163076a"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codigo6_8ino.html#aa70fb7a53861597468cd3ba50163076a">tras_motorL</a>&#160;&#160;&#160;4</td></tr>
+<tr class="memdesc:aa70fb7a53861597468cd3ba50163076a"><td class="mdescLeft">&#160;</td><td class="mdescRight">porta de saida para motor da esquerda  <br /></td></tr>
+<tr class="separator:aa70fb7a53861597468cd3ba50163076a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:ad39420cdd896dd12c68e36313139d0a5" id="r_ad39420cdd896dd12c68e36313139d0a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codigo6_8ino.html#ad39420cdd896dd12c68e36313139d0a5">ISR</a> (<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">TIMER1_COMPA_vect</a>)</td></tr>
+<tr class="memdesc:ad39420cdd896dd12c68e36313139d0a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">interrupção do timer1  <br /></td></tr>
+<tr class="separator:ad39420cdd896dd12c68e36313139d0a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add2d7cdddfb682dcc0391e60cf42c7d6" id="r_add2d7cdddfb682dcc0391e60cf42c7d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codigo6_8ino.html#add2d7cdddfb682dcc0391e60cf42c7d6">ISR</a> (<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">TIMER0_OVF_vect</a>)</td></tr>
+<tr class="memdesc:add2d7cdddfb682dcc0391e60cf42c7d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">interrupção do timer0  <br /></td></tr>
+<tr class="separator:add2d7cdddfb682dcc0391e60cf42c7d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afea150fcd685610cb9f7672fce361e53" id="r_afea150fcd685610cb9f7672fce361e53"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codigo6_8ino.html#afea150fcd685610cb9f7672fce361e53">ISR</a> (<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">INT0_vect</a>)</td></tr>
+<tr class="memdesc:afea150fcd685610cb9f7672fce361e53"><td class="mdescLeft">&#160;</td><td class="mdescRight">interrupção do botão  <br /></td></tr>
+<tr class="separator:afea150fcd685610cb9f7672fce361e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05c2e5b588ced1cd7312f5b0edc5b295" id="r_a05c2e5b588ced1cd7312f5b0edc5b295"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codigo6_8ino.html#a05c2e5b588ced1cd7312f5b0edc5b295">ISR</a> (<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">ADC_vect</a>)</td></tr>
+<tr class="memdesc:a05c2e5b588ced1cd7312f5b0edc5b295"><td class="mdescLeft">&#160;</td><td class="mdescRight">interrupção do ADC  <br /></td></tr>
+<tr class="separator:a05c2e5b588ced1cd7312f5b0edc5b295"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a1ca7a7068b77a2936143fdc1e017e4" id="r_a9a1ca7a7068b77a2936143fdc1e017e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codigo6_8ino.html#a9a1ca7a7068b77a2936143fdc1e017e4">alterna_adc</a> ()</td></tr>
+<tr class="memdesc:a9a1ca7a7068b77a2936143fdc1e017e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">rotina de troca da porta analógica após a interrupção  <br /></td></tr>
+<tr class="separator:a9a1ca7a7068b77a2936143fdc1e017e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99eb04bf8fed2beecfb3cb74451416c5" id="r_a99eb04bf8fed2beecfb3cb74451416c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codigo6_8ino.html#a99eb04bf8fed2beecfb3cb74451416c5">timer0_init</a> ()</td></tr>
+<tr class="separator:a99eb04bf8fed2beecfb3cb74451416c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e942fcd91f79d49e4ddb8d7e9d3ef95" id="r_a1e942fcd91f79d49e4ddb8d7e9d3ef95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codigo6_8ino.html#a1e942fcd91f79d49e4ddb8d7e9d3ef95">adc_init</a> ()</td></tr>
+<tr class="memdesc:a1e942fcd91f79d49e4ddb8d7e9d3ef95"><td class="mdescLeft">&#160;</td><td class="mdescRight">setup do conversor analógico  <br /></td></tr>
+<tr class="separator:a1e942fcd91f79d49e4ddb8d7e9d3ef95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb302081b7dbd40d0fea4bbe53fd9b7b" id="r_abb302081b7dbd40d0fea4bbe53fd9b7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codigo6_8ino.html#abb302081b7dbd40d0fea4bbe53fd9b7b">timer1_init</a> ()</td></tr>
+<tr class="memdesc:abb302081b7dbd40d0fea4bbe53fd9b7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">setup do timer1 para 1 segundo, usado na rotina do laser  <br /></td></tr>
+<tr class="separator:abb302081b7dbd40d0fea4bbe53fd9b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99e43a0906a04762352f73831673c7eb" id="r_a99e43a0906a04762352f73831673c7eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codigo6_8ino.html#a99e43a0906a04762352f73831673c7eb">trigger_init</a> ()</td></tr>
+<tr class="memdesc:a99e43a0906a04762352f73831673c7eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">rotina de inicialização do funcionamento do botão  <br /></td></tr>
+<tr class="separator:a99e43a0906a04762352f73831673c7eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad859b8c4e9c364ea47a6ea23c5b13562" id="r_ad859b8c4e9c364ea47a6ea23c5b13562"><td class="memItemLeft" align="right" valign="top"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codigo6_8ino.html#ad859b8c4e9c364ea47a6ea23c5b13562">inicioVidas</a> ()</td></tr>
+<tr class="memdesc:ad859b8c4e9c364ea47a6ea23c5b13562"><td class="mdescLeft">&#160;</td><td class="mdescRight">rotina de setup das vidas  <br /></td></tr>
+<tr class="separator:ad859b8c4e9c364ea47a6ea23c5b13562"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a651f8aa7bd4011bdf6e29b7ca5b654a2" id="r_a651f8aa7bd4011bdf6e29b7ca5b654a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codigo6_8ino.html#a651f8aa7bd4011bdf6e29b7ca5b654a2">leituraLDR</a> ()</td></tr>
+<tr class="memdesc:a651f8aa7bd4011bdf6e29b7ca5b654a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">rotina de leitura do LDR  <br /></td></tr>
+<tr class="separator:a651f8aa7bd4011bdf6e29b7ca5b654a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a700a144a17d88ba17fed0894ef194fad" id="r_a700a144a17d88ba17fed0894ef194fad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codigo6_8ino.html#a700a144a17d88ba17fed0894ef194fad">desligaRobo</a> ()</td></tr>
+<tr class="memdesc:a700a144a17d88ba17fed0894ef194fad"><td class="mdescLeft">&#160;</td><td class="mdescRight">rotina para desativar o carro após perder todas as vidas  <br /></td></tr>
+<tr class="separator:a700a144a17d88ba17fed0894ef194fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad64025c0fac4e005895f26358f06bc50" id="r_ad64025c0fac4e005895f26358f06bc50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codigo6_8ino.html#ad64025c0fac4e005895f26358f06bc50">giro</a> ()</td></tr>
+<tr class="memdesc:ad64025c0fac4e005895f26358f06bc50"><td class="mdescLeft">&#160;</td><td class="mdescRight">rotina de reposicionamento do carrinho após o dano  <br /></td></tr>
+<tr class="separator:ad64025c0fac4e005895f26358f06bc50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51ffff5cd3c378a2f526f82be3975e69" id="r_a51ffff5cd3c378a2f526f82be3975e69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codigo6_8ino.html#a51ffff5cd3c378a2f526f82be3975e69">dano</a> ()</td></tr>
+<tr class="memdesc:a51ffff5cd3c378a2f526f82be3975e69"><td class="mdescLeft">&#160;</td><td class="mdescRight">rotina de dedução de vida  <br /></td></tr>
+<tr class="separator:a51ffff5cd3c378a2f526f82be3975e69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a840291bc02cba5474a4cb46a9b9566fe" id="r_a840291bc02cba5474a4cb46a9b9566fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codigo6_8ino.html#a840291bc02cba5474a4cb46a9b9566fe">main</a> (<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">void</a>)</td></tr>
+<tr class="memdesc:a840291bc02cba5474a4cb46a9b9566fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">rotina principal de loop do programa, com rotina de movimento e inicialização de setup  <br /></td></tr>
+<tr class="separator:a840291bc02cba5474a4cb46a9b9566fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1de49b0eefcf1550ef923eb7f702a32f" id="r_a1de49b0eefcf1550ef923eb7f702a32f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codigo6_8ino.html#a1de49b0eefcf1550ef923eb7f702a32f">ReadADC</a> (<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">uint8_t</a> <a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">channel</a>)</td></tr>
+<tr class="memdesc:a1de49b0eefcf1550ef923eb7f702a32f"><td class="mdescLeft">&#160;</td><td class="mdescRight">função que alterna a porta analógica a ser convertida  <br /></td></tr>
+<tr class="separator:a1de49b0eefcf1550ef923eb7f702a32f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variáveis</h2></td></tr>
+<tr class="memitem:a5b1d22d5d1ff4f42fab5fc70bd2c0470" id="r_a5b1d22d5d1ff4f42fab5fc70bd2c0470"><td class="memItemLeft" align="right" valign="top"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">volatile</a> <a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codigo6_8ino.html#a5b1d22d5d1ff4f42fab5fc70bd2c0470">tot_overflowTimer0</a></td></tr>
+<tr class="memdesc:a5b1d22d5d1ff4f42fab5fc70bd2c0470"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variável de controle do TIMER0.  <br /></td></tr>
+<tr class="separator:a5b1d22d5d1ff4f42fab5fc70bd2c0470"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32ded9fb16c06696e0f42fc65a97d9c6" id="r_a32ded9fb16c06696e0f42fc65a97d9c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">volatile</a> <a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codigo6_8ino.html#a32ded9fb16c06696e0f42fc65a97d9c6">vidasTotais</a></td></tr>
+<tr class="memdesc:a32ded9fb16c06696e0f42fc65a97d9c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variável de controle das vidas.  <br /></td></tr>
+<tr class="separator:a32ded9fb16c06696e0f42fc65a97d9c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b948614fd2e232ad619635acc589f71" id="r_a0b948614fd2e232ad619635acc589f71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">volatile</a> <a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codigo6_8ino.html#a0b948614fd2e232ad619635acc589f71">danoObtido</a></td></tr>
+<tr class="memdesc:a0b948614fd2e232ad619635acc589f71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variável de controle do dano.  <br /></td></tr>
+<tr class="separator:a0b948614fd2e232ad619635acc589f71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30703ab42a85a0dc785d79bdca91a351" id="r_a30703ab42a85a0dc785d79bdca91a351"><td class="memItemLeft" align="right" valign="top"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">volatile</a> <a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codigo6_8ino.html#a30703ab42a85a0dc785d79bdca91a351">tot_overflow</a></td></tr>
+<tr class="memdesc:a30703ab42a85a0dc785d79bdca91a351"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variavel de estouro para alternar o ADC.  <br /></td></tr>
+<tr class="separator:a30703ab42a85a0dc785d79bdca91a351"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa009de22ab24582f67196c54902ebe0e" id="r_aa009de22ab24582f67196c54902ebe0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codigo6_8ino.html#aa009de22ab24582f67196c54902ebe0e">adcValor</a></td></tr>
+<tr class="memdesc:aa009de22ab24582f67196c54902ebe0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Varial que recebe o valor convertido do LDR.  <br /></td></tr>
+<tr class="separator:aa009de22ab24582f67196c54902ebe0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b201e57251caa28a331c39afd249805" id="r_a3b201e57251caa28a331c39afd249805"><td class="memItemLeft" align="right" valign="top"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codigo6_8ino.html#a3b201e57251caa28a331c39afd249805">LDR</a></td></tr>
+<tr class="memdesc:a3b201e57251caa28a331c39afd249805"><td class="mdescLeft">&#160;</td><td class="mdescRight">Varial dque recebe o valor atualizado do LDR.  <br /></td></tr>
+<tr class="separator:a3b201e57251caa28a331c39afd249805"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd6acd1beae223fb17c4d308b7fde3cb" id="r_afd6acd1beae223fb17c4d308b7fde3cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codigo6_8ino.html#afd6acd1beae223fb17c4d308b7fde3cb">lado</a></td></tr>
+<tr class="memdesc:afd6acd1beae223fb17c4d308b7fde3cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variavel que recebe o valor do eixo X do joystick.  <br /></td></tr>
+<tr class="separator:afd6acd1beae223fb17c4d308b7fde3cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacde071184a5eccab7f440651c90c5a8" id="r_aacde071184a5eccab7f440651c90c5a8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">frente</a></td></tr>
+<tr class="memdesc:aacde071184a5eccab7f440651c90c5a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variavel que recebe o valor do eixo Y do joystick.  <br /></td></tr>
+<tr class="separator:aacde071184a5eccab7f440651c90c5a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf916204820072417ed73a32de1cefcf" id="r_adf916204820072417ed73a32de1cefcf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="codigo6_8ino.html#adf916204820072417ed73a32de1cefcf">flag</a></td></tr>
+<tr class="memdesc:adf916204820072417ed73a32de1cefcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag de inicialização do sistema de vidas.  <br /></td></tr>
+<tr class="separator:adf916204820072417ed73a32de1cefcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Definições e macros</h2>
+<a id="a11643f271076024c395a93800b3d9546" name="a11643f271076024c395a93800b3d9546"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11643f271076024c395a93800b3d9546">&#9670;&#160;</a></span>_BV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">define</a> _BV</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">bit</a></td><td>)</td>
+          <td>&#160;&#160;&#160;(1 &lt;&lt; (<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">bit</a>))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Macro bit value. </p>
+
+<p class="definition">Definição na linha <a class="el" href="codigo6_8ino_source.html#l00015">15</a> do arquivo <a class="el" href="codigo6_8ino_source.html">codigo6.ino</a>.</p>
+
+</div>
+</div>
+<a id="afeb640750b23feafe7747a2da47507a0" name="afeb640750b23feafe7747a2da47507a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afeb640750b23feafe7747a2da47507a0">&#9670;&#160;</a></span>CLEAR_BIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">define</a> CLEAR_BIT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">PORT</a>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">BIT</a>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">PORT</a> &amp;= ~(1&lt;&lt;<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">BIT</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>limpa o bit na respectiva porta </p>
+
+<p class="definition">Definição na linha <a class="el" href="codigo6_8ino_source.html#l00017">17</a> do arquivo <a class="el" href="codigo6_8ino_source.html">codigo6.ino</a>.</p>
+
+</div>
+</div>
+<a id="a43bafb28b29491ec7f871319b5a3b2f8" name="a43bafb28b29491ec7f871319b5a3b2f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43bafb28b29491ec7f871319b5a3b2f8">&#9670;&#160;</a></span>F_CPU</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">define</a> F_CPU&#160;&#160;&#160;16000000UL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Define frequência de operação. </p>
+
+<p class="definition">Definição na linha <a class="el" href="codigo6_8ino_source.html#l00014">14</a> do arquivo <a class="el" href="codigo6_8ino_source.html">codigo6.ino</a>.</p>
+
+</div>
+</div>
+<a id="a7ae05c52c97fb8f1759905c87e3003a5" name="a7ae05c52c97fb8f1759905c87e3003a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ae05c52c97fb8f1759905c87e3003a5">&#9670;&#160;</a></span>FLIP_BIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">define</a> FLIP_BIT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">PORT</a>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">BIT</a>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">PORT</a> ^= (1&lt;&lt;<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">BIT</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Alterna o valor do bit na respectiva porta. </p>
+
+<p class="definition">Definição na linha <a class="el" href="codigo6_8ino_source.html#l00018">18</a> do arquivo <a class="el" href="codigo6_8ino_source.html">codigo6.ino</a>.</p>
+
+</div>
+</div>
+<a id="a0a60c3df33306787e180359317de9701" name="a0a60c3df33306787e180359317de9701"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a60c3df33306787e180359317de9701">&#9670;&#160;</a></span>frente_motorL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">define</a> frente_motorL&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>porta de saida para motor da esquerda </p>
+
+<p class="definition">Definição na linha <a class="el" href="codigo6_8ino_source.html#l00021">21</a> do arquivo <a class="el" href="codigo6_8ino_source.html">codigo6.ino</a>.</p>
+
+</div>
+</div>
+<a id="a2515c572128cd2566a8b93993fd9b7d5" name="a2515c572128cd2566a8b93993fd9b7d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2515c572128cd2566a8b93993fd9b7d5">&#9670;&#160;</a></span>frente_motorR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">define</a> frente_motorR&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>porta de saida para motor da direita </p>
+
+<p class="definition">Definição na linha <a class="el" href="codigo6_8ino_source.html#l00019">19</a> do arquivo <a class="el" href="codigo6_8ino_source.html">codigo6.ino</a>.</p>
+
+</div>
+</div>
+<a id="a7bdc25d2e1718c2190ce286a5a82f4da" name="a7bdc25d2e1718c2190ce286a5a82f4da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bdc25d2e1718c2190ce286a5a82f4da">&#9670;&#160;</a></span>SET_BIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">define</a> SET_BIT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">PORT</a>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">BIT</a>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">PORT</a> |= (1&lt;&lt;<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">BIT</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Define como 1 o bit na respectiva porta <br  />
+ </p>
+
+<p class="definition">Definição na linha <a class="el" href="codigo6_8ino_source.html#l00016">16</a> do arquivo <a class="el" href="codigo6_8ino_source.html">codigo6.ino</a>.</p>
+
+</div>
+</div>
+<a id="aa70fb7a53861597468cd3ba50163076a" name="aa70fb7a53861597468cd3ba50163076a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa70fb7a53861597468cd3ba50163076a">&#9670;&#160;</a></span>tras_motorL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">define</a> tras_motorL&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>porta de saida para motor da esquerda </p>
+
+<p class="definition">Definição na linha <a class="el" href="codigo6_8ino_source.html#l00022">22</a> do arquivo <a class="el" href="codigo6_8ino_source.html">codigo6.ino</a>.</p>
+
+</div>
+</div>
+<a id="a9b850e11bc963a2bb44a03561fdcf94b" name="a9b850e11bc963a2bb44a03561fdcf94b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b850e11bc963a2bb44a03561fdcf94b">&#9670;&#160;</a></span>tras_motorR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#<a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">define</a> tras_motorR&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>porta de saida para motor da direita </p>
+
+<p class="definition">Definição na linha <a class="el" href="codigo6_8ino_source.html#l00020">20</a> do arquivo <a class="el" href="codigo6_8ino_source.html">codigo6.ino</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Funções</h2>
+<a id="a1e942fcd91f79d49e4ddb8d7e9d3ef95" name="a1e942fcd91f79d49e4ddb8d7e9d3ef95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e942fcd91f79d49e4ddb8d7e9d3ef95">&#9670;&#160;</a></span>adc_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">void</a> adc_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>setup do conversor analógico </p>
+
+<p class="definition">Definição na linha <a class="el" href="codigo6_8ino_source.html#l00134">134</a> do arquivo <a class="el" href="codigo6_8ino_source.html">codigo6.ino</a>.</p>
+
+</div>
+</div>
+<a id="a9a1ca7a7068b77a2936143fdc1e017e4" name="a9a1ca7a7068b77a2936143fdc1e017e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a1ca7a7068b77a2936143fdc1e017e4">&#9670;&#160;</a></span>alterna_adc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">void</a> alterna_adc </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>rotina de troca da porta analógica após a interrupção </p>
+
+<p class="definition">Definição na linha <a class="el" href="codigo6_8ino_source.html#l00102">102</a> do arquivo <a class="el" href="codigo6_8ino_source.html">codigo6.ino</a>.</p>
+
+</div>
+</div>
+<a id="a51ffff5cd3c378a2f526f82be3975e69" name="a51ffff5cd3c378a2f526f82be3975e69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51ffff5cd3c378a2f526f82be3975e69">&#9670;&#160;</a></span>dano()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">void</a> dano </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>rotina de dedução de vida </p>
+
+<p class="definition">Definição na linha <a class="el" href="codigo6_8ino_source.html#l00238">238</a> do arquivo <a class="el" href="codigo6_8ino_source.html">codigo6.ino</a>.</p>
+
+</div>
+</div>
+<a id="a700a144a17d88ba17fed0894ef194fad" name="a700a144a17d88ba17fed0894ef194fad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a700a144a17d88ba17fed0894ef194fad">&#9670;&#160;</a></span>desligaRobo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">void</a> desligaRobo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>rotina para desativar o carro após perder todas as vidas </p>
+
+<p class="definition">Definição na linha <a class="el" href="codigo6_8ino_source.html#l00205">205</a> do arquivo <a class="el" href="codigo6_8ino_source.html">codigo6.ino</a>.</p>
+
+</div>
+</div>
+<a id="ad64025c0fac4e005895f26358f06bc50" name="ad64025c0fac4e005895f26358f06bc50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad64025c0fac4e005895f26358f06bc50">&#9670;&#160;</a></span>giro()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">void</a> giro </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>rotina de reposicionamento do carrinho após o dano </p>
+
+<p class="definition">Definição na linha <a class="el" href="codigo6_8ino_source.html#l00217">217</a> do arquivo <a class="el" href="codigo6_8ino_source.html">codigo6.ino</a>.</p>
+
+</div>
+</div>
+<a id="ad859b8c4e9c364ea47a6ea23c5b13562" name="ad859b8c4e9c364ea47a6ea23c5b13562"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad859b8c4e9c364ea47a6ea23c5b13562">&#9670;&#160;</a></span>inicioVidas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">void</a> inicioVidas </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>rotina de setup das vidas </p>
+
+<p class="definition">Definição na linha <a class="el" href="codigo6_8ino_source.html#l00175">175</a> do arquivo <a class="el" href="codigo6_8ino_source.html">codigo6.ino</a>.</p>
+
+</div>
+</div>
+<a id="a05c2e5b588ced1cd7312f5b0edc5b295" name="a05c2e5b588ced1cd7312f5b0edc5b295"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05c2e5b588ced1cd7312f5b0edc5b295">&#9670;&#160;</a></span>ISR() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ISR </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">ADC_vect</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>interrupção do ADC </p>
+
+<p class="definition">Definição na linha <a class="el" href="codigo6_8ino_source.html#l00088">88</a> do arquivo <a class="el" href="codigo6_8ino_source.html">codigo6.ino</a>.</p>
+
+</div>
+</div>
+<a id="afea150fcd685610cb9f7672fce361e53" name="afea150fcd685610cb9f7672fce361e53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afea150fcd685610cb9f7672fce361e53">&#9670;&#160;</a></span>ISR() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ISR </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">INT0_vect</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>interrupção do botão </p>
+
+<p class="definition">Definição na linha <a class="el" href="codigo6_8ino_source.html#l00072">72</a> do arquivo <a class="el" href="codigo6_8ino_source.html">codigo6.ino</a>.</p>
+
+</div>
+</div>
+<a id="add2d7cdddfb682dcc0391e60cf42c7d6" name="add2d7cdddfb682dcc0391e60cf42c7d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add2d7cdddfb682dcc0391e60cf42c7d6">&#9670;&#160;</a></span>ISR() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ISR </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">TIMER0_OVF_vect</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>interrupção do timer0 </p>
+
+<p class="definition">Definição na linha <a class="el" href="codigo6_8ino_source.html#l00062">62</a> do arquivo <a class="el" href="codigo6_8ino_source.html">codigo6.ino</a>.</p>
+
+</div>
+</div>
+<a id="ad39420cdd896dd12c68e36313139d0a5" name="ad39420cdd896dd12c68e36313139d0a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad39420cdd896dd12c68e36313139d0a5">&#9670;&#160;</a></span>ISR() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ISR </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">TIMER1_COMPA_vect</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>interrupção do timer1 </p>
+
+<p class="definition">Definição na linha <a class="el" href="codigo6_8ino_source.html#l00048">48</a> do arquivo <a class="el" href="codigo6_8ino_source.html">codigo6.ino</a>.</p>
+
+</div>
+</div>
+<a id="a651f8aa7bd4011bdf6e29b7ca5b654a2" name="a651f8aa7bd4011bdf6e29b7ca5b654a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a651f8aa7bd4011bdf6e29b7ca5b654a2">&#9670;&#160;</a></span>leituraLDR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">void</a> leituraLDR </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>rotina de leitura do LDR </p>
+
+<p class="definition">Definição na linha <a class="el" href="codigo6_8ino_source.html#l00191">191</a> do arquivo <a class="el" href="codigo6_8ino_source.html">codigo6.ino</a>.</p>
+
+</div>
+</div>
+<a id="a840291bc02cba5474a4cb46a9b9566fe" name="a840291bc02cba5474a4cb46a9b9566fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a840291bc02cba5474a4cb46a9b9566fe">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">int</a> main </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>rotina principal de loop do programa, com rotina de movimento e inicialização de setup </p>
+
+<p class="definition">Definição na linha <a class="el" href="codigo6_8ino_source.html#l00271">271</a> do arquivo <a class="el" href="codigo6_8ino_source.html">codigo6.ino</a>.</p>
+
+</div>
+</div>
+<a id="a1de49b0eefcf1550ef923eb7f702a32f" name="a1de49b0eefcf1550ef923eb7f702a32f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1de49b0eefcf1550ef923eb7f702a32f">&#9670;&#160;</a></span>ReadADC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">uint16_t</a> ReadADC </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>channel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>função que alterna a porta analógica a ser convertida </p>
+
+<p class="definition">Definição na linha <a class="el" href="codigo6_8ino_source.html#l00339">339</a> do arquivo <a class="el" href="codigo6_8ino_source.html">codigo6.ino</a>.</p>
+
+</div>
+</div>
+<a id="a99eb04bf8fed2beecfb3cb74451416c5" name="a99eb04bf8fed2beecfb3cb74451416c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99eb04bf8fed2beecfb3cb74451416c5">&#9670;&#160;</a></span>timer0_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">void</a> timer0_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>setup do timer0 em overflow utilizado na troca de porta analógica a ser convertida </p>
+
+<p class="definition">Definição na linha <a class="el" href="codigo6_8ino_source.html#l00120">120</a> do arquivo <a class="el" href="codigo6_8ino_source.html">codigo6.ino</a>.</p>
+
+</div>
+</div>
+<a id="abb302081b7dbd40d0fea4bbe53fd9b7b" name="abb302081b7dbd40d0fea4bbe53fd9b7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb302081b7dbd40d0fea4bbe53fd9b7b">&#9670;&#160;</a></span>timer1_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">void</a> timer1_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>setup do timer1 para 1 segundo, usado na rotina do laser </p>
+
+<p class="definition">Definição na linha <a class="el" href="codigo6_8ino_source.html#l00152">152</a> do arquivo <a class="el" href="codigo6_8ino_source.html">codigo6.ino</a>.</p>
+
+</div>
+</div>
+<a id="a99e43a0906a04762352f73831673c7eb" name="a99e43a0906a04762352f73831673c7eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99e43a0906a04762352f73831673c7eb">&#9670;&#160;</a></span>trigger_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">void</a> trigger_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>rotina de inicialização do funcionamento do botão </p>
+
+<p class="definition">Definição na linha <a class="el" href="codigo6_8ino_source.html#l00163">163</a> do arquivo <a class="el" href="codigo6_8ino_source.html">codigo6.ino</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variáveis</h2>
+<a id="aa009de22ab24582f67196c54902ebe0e" name="aa009de22ab24582f67196c54902ebe0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa009de22ab24582f67196c54902ebe0e">&#9670;&#160;</a></span>adcValor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">uint16_t</a> adcValor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Varial que recebe o valor convertido do LDR. </p>
+
+<p class="definition">Definição na linha <a class="el" href="codigo6_8ino_source.html#l00032">32</a> do arquivo <a class="el" href="codigo6_8ino_source.html">codigo6.ino</a>.</p>
+
+</div>
+</div>
+<a id="a0b948614fd2e232ad619635acc589f71" name="a0b948614fd2e232ad619635acc589f71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b948614fd2e232ad619635acc589f71">&#9670;&#160;</a></span>danoObtido</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">volatile</a> <a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">uint8_t</a> danoObtido</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variável de controle do dano. </p>
+
+<p class="definition">Definição na linha <a class="el" href="codigo6_8ino_source.html#l00027">27</a> do arquivo <a class="el" href="codigo6_8ino_source.html">codigo6.ino</a>.</p>
+
+</div>
+</div>
+<a id="adf916204820072417ed73a32de1cefcf" name="adf916204820072417ed73a32de1cefcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf916204820072417ed73a32de1cefcf">&#9670;&#160;</a></span>flag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">int</a> flag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Flag de inicialização do sistema de vidas. </p>
+
+<p class="definition">Definição na linha <a class="el" href="codigo6_8ino_source.html#l00040">40</a> do arquivo <a class="el" href="codigo6_8ino_source.html">codigo6.ino</a>.</p>
+
+</div>
+</div>
+<a id="aacde071184a5eccab7f440651c90c5a8" name="aacde071184a5eccab7f440651c90c5a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacde071184a5eccab7f440651c90c5a8">&#9670;&#160;</a></span>frente</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int frente</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variavel que recebe o valor do eixo Y do joystick. </p>
+
+<p class="definition">Definição na linha <a class="el" href="codigo6_8ino_source.html#l00038">38</a> do arquivo <a class="el" href="codigo6_8ino_source.html">codigo6.ino</a>.</p>
+
+</div>
+</div>
+<a id="afd6acd1beae223fb17c4d308b7fde3cb" name="afd6acd1beae223fb17c4d308b7fde3cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd6acd1beae223fb17c4d308b7fde3cb">&#9670;&#160;</a></span>lado</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">int</a> lado</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variavel que recebe o valor do eixo X do joystick. </p>
+
+<p class="definition">Definição na linha <a class="el" href="codigo6_8ino_source.html#l00036">36</a> do arquivo <a class="el" href="codigo6_8ino_source.html">codigo6.ino</a>.</p>
+
+</div>
+</div>
+<a id="a3b201e57251caa28a331c39afd249805" name="a3b201e57251caa28a331c39afd249805"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b201e57251caa28a331c39afd249805">&#9670;&#160;</a></span>LDR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">int</a> LDR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Varial dque recebe o valor atualizado do LDR. </p>
+
+<p class="definition">Definição na linha <a class="el" href="codigo6_8ino_source.html#l00034">34</a> do arquivo <a class="el" href="codigo6_8ino_source.html">codigo6.ino</a>.</p>
+
+</div>
+</div>
+<a id="a30703ab42a85a0dc785d79bdca91a351" name="a30703ab42a85a0dc785d79bdca91a351"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30703ab42a85a0dc785d79bdca91a351">&#9670;&#160;</a></span>tot_overflow</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">volatile</a> <a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">uint8_t</a> tot_overflow</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variavel de estouro para alternar o ADC. </p>
+
+<p class="definition">Definição na linha <a class="el" href="codigo6_8ino_source.html#l00028">28</a> do arquivo <a class="el" href="codigo6_8ino_source.html">codigo6.ino</a>.</p>
+
+</div>
+</div>
+<a id="a5b1d22d5d1ff4f42fab5fc70bd2c0470" name="a5b1d22d5d1ff4f42fab5fc70bd2c0470"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b1d22d5d1ff4f42fab5fc70bd2c0470">&#9670;&#160;</a></span>tot_overflowTimer0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">volatile</a> <a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">uint8_t</a> tot_overflowTimer0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variável de controle do TIMER0. </p>
+
+<p class="definition">Definição na linha <a class="el" href="codigo6_8ino_source.html#l00025">25</a> do arquivo <a class="el" href="codigo6_8ino_source.html">codigo6.ino</a>.</p>
+
+</div>
+</div>
+<a id="a32ded9fb16c06696e0f42fc65a97d9c6" name="a32ded9fb16c06696e0f42fc65a97d9c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32ded9fb16c06696e0f42fc65a97d9c6">&#9670;&#160;</a></span>vidasTotais</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">volatile</a> <a class="el" href="codigo6_8ino.html#aacde071184a5eccab7f440651c90c5a8">uint8_t</a> vidasTotais</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variável de controle das vidas. </p>
+
+<p class="definition">Definição na linha <a class="el" href="codigo6_8ino_source.html#l00026">26</a> do arquivo <a class="el" href="codigo6_8ino_source.html">codigo6.ino</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>
