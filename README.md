@@ -1,7 +1,5 @@
 <h1 align= "center">GigantesDeMDF</h1>
 
-# Gigante de MDF
-
 Projeto referente a disciplina de Programação de Hardware, 6° Semestre, Engenharia de Computação.
 
 ## Participantes
