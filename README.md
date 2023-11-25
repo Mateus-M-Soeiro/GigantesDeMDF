@@ -11,6 +11,13 @@ Projeto referente a disciplina de Programação de Hardware, 6° Semestre, Engen
 
 ## Sobre
 
+O projeto Gigantes de MDF foi desenvolvido com o objetivo de colocar em prática os conhecimentos lecionados durante o semestre.
+
+Toda a programação do projeto foi baseada no datasheet do microcontrolador Atmega328p.
+
+A linguagem de programação utilizada foi a C.
+
+Ficou evidente o uso eficiente e otimizado do microcontrolador Atmega328p, por meio de uma programação limpa e dinâmica.
 
 ## Componentes e esquemático
 
